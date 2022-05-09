@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List</title>
+    <!-- Css Bootstrap 5  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    
+</head>
+<body>
+  
+    <!-- css styling start -->
+    <style>
+        .success,.error{
+            color: #fff;
+            padding: 15px;
+            margin: 5px 0 15px 0;
+        }
+        .success{
+            background-color: green;
+        }
+        .error{
+            background-color: red;
+        }
+     
+  
+   
+    </style> 
+     <!-- css styling end -->
+    <div class="container">
+        <h1>Add Book</h1>
+        <form id="book-form">
+            <div class="mb-3">
+              <label for="book-title" class="form-label fw-bold">Title</label>
+              <input type="text" class="form-control" id="book-title">
+            </div>
+            <div class="mb-3">
+              <label for="author-name" class="form-label fw-bold">Author</label>
+              <input type="text" class="form-control" id="book-author">
+            </div>
+            <div class="mb-3">
+              <label for="isbn-number" class="form-label fw-bold">ISBN</label>
+              <input type="text" class="form-control" id="book-isbn">
+            </div>
+          
+            <button type="submit" class="btn btn-primary w-100 mb-4">Submit</button>
+          </form>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Title</th>
+                <th scope="col">Author</th>
+                <th scope="col">ISBN</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody id="book-list">
+            </tbody>
+          </table>
+          
+    </div>
+
+     <!-- js Bootstrap 5 -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+     <!-- main js file -->
+    <script src="app.js"></script>
+</body>
+</html>
